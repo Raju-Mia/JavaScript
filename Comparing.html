@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is comparing simple pblm . else number then print it's number or prift if .-->
+    <h1>comparing value check</h1>
+    <p>this is normal page</p>
+    <input id="age" value="20" />
+    <button onclick="myFunction()">try it</button>
+    <p id="demo">the:</p>
+
+
+<script>
+function myFunction(){
+    let var2;
+    let age = Number(document.getElementById("age").value);
+
+    if (isNaN(age)) {
+        var2 = "Input is not a number";
+    }
+    else{
+        var2 = (age < 20 ) ? "this is number" : "big number";
+    }
+    document.getElementById("demo").innerHTML = "the result is " + var2 + ".";
+
+}
+</script>
+</body>
+</html>

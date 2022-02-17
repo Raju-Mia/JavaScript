@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace all occurrences of "Microsoft"  bye option variable :</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft</p>
+
+<script>
+let option = "this is new line";
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML; 
+  document.getElementById("demo").innerHTML =
+  text.replace("Microsoft", option); //To replace case insensitive, use a regular expression with an /i flag (insensitive):
+}
+</script>
+
+</body>
+</html>
+
+
