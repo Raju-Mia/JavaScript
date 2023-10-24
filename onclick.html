@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function sayHello() {
+        alert("Hello World");
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" onclick="sayHello()" value="Say Hello" />
+
+    <button type="button" onclick="HellowWorldButtonID()">click</button>
+    <p id="check_id">value will be replaced Here.</p>
+    <script>
+      function HellowWorldButtonID() {
+        let a, b, sum;
+        a = 5;
+        b = 6;
+        sum = a + b;
+
+        document.getElementById("check_id").innerHTML =
+          "THE SUM VALUE IS: " + sum + ".";
+      }
+    </script>
+    
+  </body>
+</html>
